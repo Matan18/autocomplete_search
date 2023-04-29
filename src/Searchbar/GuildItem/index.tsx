@@ -1,9 +1,7 @@
+import { getGuildIcon } from "../../utils/guildIcon";
+import { formater } from "../../utils/simplifyNumber";
+
 type Props = { guild: Guild };
-
-const baseCdnUrl = "https://cdn.discordapp.com/";
-
-const getGuildIcon = (guild: Guild) =>
-  `${baseCdnUrl}icons/${guild.id}/${guild.icon}.png`;
 
 export const GuildItem = ({ guild }: Props) => (
   <li
@@ -17,7 +15,7 @@ export const GuildItem = ({ guild }: Props) => (
         {guild.name}
       </h4>
       <strong className="text-sm text-zinc-400">
-        {guild.approximate_member_count}
+        {formater.format(guild.approximate_member_count)}
       </strong>
     </main>
     <a
