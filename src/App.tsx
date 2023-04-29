@@ -1,3 +1,4 @@
+import { Footer } from "./Footer";
 import { Searchbar } from "./Searchbar";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         </h3>
       </div>
       <Searchbar />
+      <Footer />
     </div>
   );
 }
