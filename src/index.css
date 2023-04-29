@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar{
+  @apply w-2;
+}
+::-webkit-scrollbar-track{
+  @apply bg-transparent p-0;
+}
+::-webkit-scrollbar-thumb{
+  @apply h-14 rounded-md bg-zinc-600;
+}
+::-webkit-scrollbar-button{
+  @apply h-0;
+}
